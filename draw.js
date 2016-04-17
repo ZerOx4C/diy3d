@@ -1,4 +1,7 @@
 var draw = {
+    clear: function (context) {
+        context.clearRect(0, 0, RES_X, RES_Y);
+    },
     pixel: function (context, x, y, color) {
         context.fillStyle = color;
         context.fillRect(x, y, 1, 1);
